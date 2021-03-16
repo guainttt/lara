@@ -6,7 +6,7 @@ $app['router']->get('/',function (){
 $app['router']->get('welcome',"App\Http\Controllers\WelcomeController@index");
 
 $app['router']->get('aa',function (){
-    return "<h1>路由成功！！</h1>";
+    return "<h1>路由成功！</h1>";
 });
 
 
