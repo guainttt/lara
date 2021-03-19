@@ -12,8 +12,13 @@ class WelcomeController
 {
     public function index()
     {
+       var_dump($_SESSION);
+        var_dump($_COOKIE);
+       $aaa ='ttt';
+        echo "welcome";
 //        return "<h1>控制器成功！！</h1>";
         $student = Student::first();
+        exit();
         $data = $student->getAttributes();
         $app = Container::getInstance();
 //        var_dump($data);exit;

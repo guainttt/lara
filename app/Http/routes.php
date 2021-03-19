@@ -1,7 +1,14 @@
 <?php
 use App\Http\Controllers\WelcomeController;
 $app['router']->get('/',function (){
-    return "<h1>路由成功！！</h1>";
+/*    echo  'bbb';
+    $a = 'aa';
+    echo "<h1>路由成功！！</h1>";
+    phpinfo();
+    exit;*/
+    phpinfo();
+    echo "<h1>路由成功！！</h1>";
+    return;
 });
 $app['router']->get('welcome',"App\Http\Controllers\WelcomeController@index");
 
